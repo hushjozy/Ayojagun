@@ -1,0 +1,45 @@
+.video_underlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.video_underlay iframe{
+    width: 100%;
+    height: 100%;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+}
+.navbar {
+    position: relative;
+    z-index: 200;
+    color: #fff;
+    background: #101010;
+    padding: 18px 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar:before,
+  .navbar:after {
+    content: " ";
+    display: table;
+  }
+  .navbar:after {
+    clear: both;
+  }
+  .navbar.page-with-cover {
+    position: fixed;
+    width: 100vw;
+    background: 0 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 1%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    background-repeat: repeat-x;
+  }
+  .navbar .inner-wrap {
+    width: 100%;
+  }
+  
