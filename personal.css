@@ -372,6 +372,10 @@ color: #fff;
       border-color: transparent;
       background: 0 0;
   }
+  .sf-menu > li {
+    font-size: 1.8rem;
+    margin-bottom: 1.3vh;
+  }
   #menu-menu-1{
     transition: all 600ms ease-in-out;
     transform: translateX(50vw);
