@@ -1,19 +1,19 @@
 let apiUrl ="https://kiradb-4408.restdb.io/rest/a-js"
 var picArray= [{
   pic_id : 1,
-  pic_url : "./img/DSC_0049.jpg",
+  pic_url : "./img/DSC_0049 Large.jpeg",
   category: "Nature"
 },{
   pic_id : 2,
-  pic_url : "./img/DSC_0141.jpg",
+  pic_url : "./img/DSC_0141 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 3,
-  pic_url : "./img/DSC_0167.jpg",
+  pic_url : "./img/DSC_0167 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 4,
-  pic_url : "./img/DSC_1168.jpg",
+  pic_url : "./img/DSC_1168 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 5,
@@ -21,31 +21,31 @@ var picArray= [{
   category: "Wild Life"
 },{
   pic_id : 6,
-  pic_url : "./img/DSC_1378.jpg",
+  pic_url : "./img/DSC_1378 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 7,
-  pic_url : "./img/DSC_1380.jpg",
+  pic_url : "./img/DSC_1380 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 8,
-  pic_url : "./img/DSC_2609.jpg",
+  pic_url : "./img/DSC_2609 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 9,
-  pic_url : "./img/IMG_0271.jpg",
+  pic_url : "./img/IMG_0271 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 10,
-  pic_url : "./img/IMG_0349.jpg",
+  pic_url : "./img/IMG_0349 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 11,
-  pic_url : "./img/IMG_0350.jpg",
+  pic_url : "./img/IMG_0350 Large.jpeg",
   category: "Wild Life"
 },{
   pic_id : 12,
-  pic_url : "./img/IMG_0355.jpg",
+  pic_url : "./img/IMG_0355 Large.jpeg",
   category: "Wild Life"
 }
 ]

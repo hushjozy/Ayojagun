@@ -364,7 +364,7 @@ color: #fff;
       position: absolute;
       float: right;
       margin: 0 0 0 15px;
-      left: 75vw;
+      left: 80vw;
       color: #fff;
       font-size: 2.4rem;
       margin-right: 5vw;
@@ -413,6 +413,9 @@ color: #fff;
       left:15vw;
       text-align: center;
       font-size: 4.5rem;
+    }
+    .each_msg.msg2{
+      background-size: cover;
     }
     .imag img{
       object-fit: cover;
