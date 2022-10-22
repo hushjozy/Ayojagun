@@ -85,24 +85,20 @@ let data; request.then(d => data = d);
     console.log('this is my response', response);
   });
 
+  function toggleMenuO(){
+    console.log("clicking", document.getElementById("menu-menu-1").style.transform);
+    if(document.getElementById("menu-menu-1").style.transform != "translateX(0px)"){
+      document.getElementById("menu-menu-1").style.transform = "translateX(0px)"
+      document.getElementById("openit").style.opacity = 0
+      document.getElementById("closeit").style.opacity = 1
+
+    }else if(document.getElementById("menu-menu-1").style.transform != "translateX(50vw)"){
+      console.log("works");
+      document.getElementById("menu-menu-1").style.transform = "translateX(50vw)"
+      document.getElementById("openit").style.opacity = 1
+      document.getElementById("closeit").style.opacity = 0
 
 
-
-// let xapikey = "6511b0c6c35f829dd107dc7a932f9b0148659";
-
-
-
-
-// var videoArray =[]
-
-// const fetchVideo = async() =>{
-//     let response = await fetch("https://kiradb-4408.restdb.io/rest/a-js", {headers: {"Content-Type": "application/json", "x-apikey": "6511b0c6c35f829dd107dc7a932f9b0148659"}})
-//     let data = await response.json()
-//     console.log (data)
-//     videoArray.push(data)
-
-// }
-
-// fetchVideo()
-
+    }
+  }
 

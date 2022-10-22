@@ -349,3 +349,105 @@ color: #fff;
 .buttono.button-2.blk:hover{
   color: #fff;
 }
+
+/* MObile Interface @media screen and (max-width: 420px) {*/
+
+  @media screen and (max-width: 420px) {
+    .imgContainer,.videosContainer{
+      justify-content: center;
+    }
+    .navbar-collapse.collapse{
+      width: 30vw;
+    }
+    .navbar-toggle {
+      display: block;
+      position: absolute;
+      float: right;
+      margin: 0 0 0 15px;
+      left: 75vw;
+      color: #fff;
+      font-size: 2.4rem;
+      margin-right: 5vw;
+      width: 40px;
+      border-color: transparent;
+      background: 0 0;
+  }
+  #menu-menu-1{
+    transition: all 600ms ease-in-out;
+    transform: translateX(50vw);
+  }
+  #closeit,#openit{
+    transition: all 400ms ease-in-out;
+    color: #fff;
+  }
+  #closeit{
+    opacity: 0;
+    position: relative;
+    margin-left: -2vw;
+  }
+    .navbar-nav {
+      position: absolute;
+      left: 69vw;
+      background-color: #000;
+      top: 8vh;
+      height: fit-content;
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+  }
+  .missing-url {
+    width: 90vw;
+    margin-left: -2vw;
+    margin-top: 10vh;
+}
+.excerpt {
+  width: 60vw;
+  margin: 0;
+  margin-left: 12.5vw;
+}
+    .vid_flex,.video_box_class {
+      width: 90.3%;
+      height: 33%; 
+    }
+    .each_msg h1 {
+      width: 70vw;
+      left:15vw;
+      text-align: center;
+      font-size: 4.5rem;
+    }
+    .imag img{
+      object-fit: cover;
+      height: 33vh;
+    }
+    #toContact label {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      text-align: center;
+      padding-top: 3vh;
+      margin: 0;
+  }
+  .cont_cont{
+    flex-wrap: wrap;
+    gap:1vh
+  }
+    .buttono {
+      width: 50%;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-inline: 2px;
+      font-size: 70%;
+      border-radius: 0;
+  }
+  footer h4 {
+    font-size: 2rem;
+    margin-left: 5vw;
+    padding-inline: 3px;
+    margin-top: 5vh;
+    letter-spacing: 3px;
+    width: 85vw;
+    text-align: center;
+    color: #fff;
+}
+.textwidget{
+  padding-top: 3vh;
+}
+}
