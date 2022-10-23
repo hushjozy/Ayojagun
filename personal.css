@@ -135,7 +135,7 @@ section {
   position: relative;
   /* top: 270vh; */
   overflow-x: hidden;
-  height: fit-content;
+  height: 100vh;
   /* z-index: 1000; */
 }
 
@@ -404,7 +404,127 @@ footer h4 {
 .buttono.button-2.blk:hover {
   color: #fff;
 }
+/* Services */
+a,p,h1,h2,h3,h4,ul {
+	margin: 0;
+	padding: 0;
+}
 
+.section-services {
+	padding-top: 110px;
+	padding-bottom: 120px;
+	font-family: "Poppins", sans-serif;
+	background-color: #fff;
+	color: #000;
+}
+
+.section-services .header-section {
+	margin-bottom: 35px;
+}
+
+.section-services .header-section .title {
+	position: relative;
+	margin-bottom: 40px;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 140px;
+	height: 1px;
+	background-color: #f70037;
+}
+
+.section-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 45px;
+	height: 3px;
+	background-color: #f70037;
+}
+
+.section-services .header-section .title span {
+	color: #f70037;
+}
+
+.section-services .header-section .description {
+	color: #6f6f71;
+}
+
+.section-services .single-service {
+	margin-top: 40px;
+	background-color: #24252a;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+.part-1{
+  height: 30vh;
+}
+.section-services .single-service .part-1 {
+	padding: 40px 40px 25px;
+	border-bottom: 2px solid #1d1e23;
+}
+
+.section-services .single-service .part-1 i {
+	margin-bottom: 25px;
+	font-size: 50px;
+	color: #f70037;
+}
+
+.section-services .single-service .part-1 .title {
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1.8em;
+  color: #fff;
+}
+
+.srow{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-inline: 3%;
+  margin: 0;
+}
+.col-md-6.col-lg-4{
+  width: 40vw;
+}
+
+.site-footer {
+  margin-top: 120vh;
+}
+/* About */
+
+
+.about_text{
+  width: 100vw;
+        height: 90vh;
+        position: relative;
+        background-color: #fff;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
+}
+.about_text h2{
+  font-size: 2.9rem;
+
+}
+.about_text p{
+  width: 50vw;
+  text-align: center;
+  margin-left: 25vw;
+  margin-top: 5vh;
+  font-size: 1.9rem;
+}
 /* MObile Interface @media screen and (max-width: 420px) {*/
  
 @media screen and (max-width: 420px) {
@@ -486,6 +606,9 @@ footer h4 {
     object-fit: cover;
     height: 33vh;
   }
+  .col-md-6.col-lg-4 {
+    width: 90vw;
+}
   #toContact label {
     font-size: 1.8rem;
     letter-spacing: 2px;

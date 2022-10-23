@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="personal.css">
     <script src="./js/f.txt"></script>
     <script type="text/javascript" async="" src="./js/analytics.js"></script>
     <script src="./js/f(1).txt" id="google_shimpl"></script>
@@ -16,132 +17,47 @@
 
   </head>
   <body style="background: transparent">
-    <nav
-      class="navbar page-with-cover"
-      role="navigation"
-      style="position: fixed; top: 0; z-index: 100"
-    >
-      <div class="inner-wrap wpz_layout_narrow wpz_menu_normal">
-        <div class="navbar-header">
-          <div class="navbar-brand-wpz">
-            <h1>
-              <a
-                href="/"
-                title="Freelance Filmmaker, Director, DOP &amp; Lighting Cameraman"
-                >Ayojagun</a
-              >
-            </h1>
-          </div>
-        </div>
-        <button type="button" class="navbar-toggle">
-          <span class="sr-only">Toggle sidebar &amp; navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div id="sb-search" class="sb-search">
-          <form method="get" id="searchform" action="/">
-            <input
-              type="search"
-              class="sb-search-input"
-              placeholder="Type your keywords and hit Enter..."
-              name="s"
-              id="s"
-              autocomplete="off"
-            />
-            <input
-              type="submit"
-              id="searchsubmit"
-              class="sb-search-submit"
-              value="Search"
-            />
-            <span class="sb-icon-search"></span>
-          </form>
-        </div>
-        <div class="header_social"></div>
-        <div class="navbar-collapse collapse">
-          <ul
-            id="menu-menu-1"
-            class="nav navbar-nav dropdown sf-menu sf-js-enabled sf-arrows"
-            style="touch-action: auto"
-          >
-            <li
-              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-209"
-            >
-              <a href="about.html" class="sf-with-ul">About</a>
-              <ul class="sub-menu" style="display: none">
-                <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2452"
-                >
-                  <a href="/cv/">CV</a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2383"
-            >
-              <a href="/services/" class="sf-with-ul">Services</a>
-              <ul class="sub-menu" style="display: none">
-                <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2462"
-                >
-                  <a href="/services/aerial-cinematography/">Aerial/Drone</a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2282"
-            >
-              <a href="/portfolio/" class="sf-with-ul">Portfolio</a>
-              <ul class="sub-menu" style="display: none">
-                <li
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2303"
-                >
-                  <a href="/showreel/">Director/DP Showreel</a>
-                </li>
-                <li
-                  class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2278"
-                >
-                  <a href="/portfolio/commercial-branded/"
-                    >Commercial &amp; Brands</a
-                  >
-                </li>
-                <li
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2532"
-                >
-                  <a href="/portfolio/director/">Director</a>
-                </li>
-                <li
-                  class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2279"
-                >
-                  <a href="/portfolio/documentary/">Documentary</a>
-                </li>
-                <li
-                  class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2280"
-                >
-                  <a href="/portfolio/short-form/">Short Form</a>
-                </li>
-                <li
-                  class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2310"
-                >
-                  <a href="/portfolio/event-coverage/">Event Coverage</a>
-                </li>
-                <li
-                  class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2281"
-                >
-                  <a href="/portfolio/experimental/">Experimental</a>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"
-            >
-              <a href="/contact/">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <nav class="navbar page-with-cover" role="navigation" style="background-color: rgba(0, 0, 0, 0.174)"><div class="inner-wrap  wpz_layout_narrow wpz_menu_normal"><div class="navbar-header"><div class="navbar-brand-wpz"><h1><a href="/" title="Freelance Filmmaker, Director, DOP &amp; Lighting Cameraman">Ayojagun</a></h1></div></div>
+      <button type="button" class="navbar-toggle">
+          <i class="fa-solid fa-bars" onclick="toggleMenuO()" id="openit"></i>
+          <i class="fa-solid fa-circle-xmark" onclick="toggleMenuO()" id="closeit"></i>
+
+      <!-- <span class="sr-only">Toggle sidebar &amp; navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span> -->
+      </button>
+      <div class="navbar-collapse collapse">
+          <ul id="menu-menu-1" class="nav navbar-nav dropdown sf-menu sf-js-enabled sf-arrows" style="touch-action: auto;"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-209">
+          <a href="about.html" class="sf-with-ul">About </a>
+          <ul class="sub-menu" style="display: none;">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2452">
+                  <a href="/cv/">CV </a>
+              </li></ul>
+          </li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2383">
+              <a href="/services/" class="sf-with-ul">Services </a>
+              <ul class="sub-menu" style="display: none;"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2462">
+                  <a href="/services/aerial-cinematography/">Aerial/Drone </a></li></ul>
+          </li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2282">
+              <a href="#sect2" class="sf-with-ul">Portfolio </a><ul class="sub-menu" style="display: none;">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2303">
+                      <a href="/showreel/">Director/DP Showreel </a>
+                  </li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2278">
+                      <a href="/portfolio/commercial-branded/">Commercial &amp; Brands 
+                  </a>
+              </li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2532"><a href="/portfolio/director/">Director</a>
+              </li><li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2279">
+                  <a href="/portfolio/documentary/">Documentary</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2280">
+                      <a href="/portfolio/short-form/">Short Form</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2310">
+                          <a href="/portfolio/event-coverage/">Event Coverage</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2281">
+                              <a href="/portfolio/experimental/">Experimental</a></li></ul>
+                          </li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="#contact">Contact</a></li></ul>
+                      </div></div>
+                  
+  </nav>
+
+    
     <div
       style="
         width: 100vw;
@@ -152,7 +68,7 @@
       "
     >
       <img
-        src="https://www.dannycooke.co.uk/wp-content/uploads/2019/05/P1033607-1200x900.jpg"
+        src="/Ayojagun/img/DSC_1378 Large.jpeg"
         alt=""
         srcset=""
         style="width: 100%; height: fit-content"
@@ -168,16 +84,7 @@
         "
       ></div>
     </div>
-    <div
-      style="
-        width: 100vw;
-        height: 90vh;
-        position: relative;
-        background-color: #fff;
-        text-align: center;
-        justify-content: center;
-        overflow: hidden;
-      "
+    <div class="about_text"
     >
       <h2>“ I capture moment and turn your imagination to reality”</h2>
       <p>
@@ -188,7 +95,7 @@
         environmental issues.
       </p>
     </div>
-    <footer
+    <!-- <footer
       style="
         background-color: black;
         height: 40vh;
@@ -203,7 +110,7 @@
         <li><a href=""></a></li>
         <li><a href=""></a></li>
       </ul>
-    </footer>
+    </footer> -->
     <script>
         (function ($) {
           $(document).ready(function () {});
