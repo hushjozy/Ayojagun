@@ -406,7 +406,7 @@ footer h4 {
 }
 
 /* MObile Interface @media screen and (max-width: 420px) {*/
-
+ 
 @media screen and (max-width: 420px) {
   .imgContainer,
   .videosContainer {
@@ -517,5 +517,10 @@ footer h4 {
   }
   .textwidget {
     padding-top: 3vh;
+  }
+}
+@media screen and (max-width: 375px) {
+  .missing-url {
+    margin-top: -6vh;
   }
 }
