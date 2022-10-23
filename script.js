@@ -53,6 +53,8 @@ const port_div = document.getElementById('port_img')
     const newImgElement = document.createElement('div')
      newImgElement.className= 'imgContainer'    
   picArray.map((item, index)=>{
+    if (index < 6){
+
     const imgFlexed= document.createElement('div')
     imgFlexed.className= 'vid_flex imag'
     imgFlexed.id=`imgBox${index}`
@@ -60,30 +62,29 @@ const port_div = document.getElementById('port_img')
      const imgMarkup = `<img src="${item.pic_url}" alt="" srcset="">`
     newImgElement.append(imgFlexed) ;     
     imgFlexed.innerHTML= imgMarkup
-    console.log(item);
+    }
  })
 
 
  port_div.append(newImgElement)
 //  port_div.append(seeMoreBtn)
 
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://kiradb-4408.restdb.io/rest/a-js",
-    "method": "GET",
-    "headers": {
-      "content-type": "application/json",
-      "x-apikey": "6511b0c6c35f829dd107dc7a932f9b0148659",
-    //   "cache-control": "no-cache"
-    }
-  }
-  let request = fetch(apiUrl, {headers: {"Accept": "application/json", "X-Api-Key": "63443556626b9c747864aaf1"}}).then(r => r.json());
+// var settings = {
+//     "async": true,
+//     "crossDomain": true,
+//     "url": "https://kiradb-4408.restdb.io/rest/a-js",
+//     "method": "GET",
+//     "headers": {
+//       "content-type": "application/json",
+//       "x-apikey": "6511b0c6c35f829dd107dc7a932f9b0148659",
+//     //   "cache-control": "no-cache"
+//     }
+//   }
+//   let request = fetch(apiUrl, {headers: {"Accept": "application/json", "X-Api-Key": "63443556626b9c747864aaf1"}}).then(r => r.json());
 
-let data; request.then(d => data = d);
-  $.ajax(settings).done(function (response) {
-    console.log('this is my response', response);
-  });
+// let data; request.then(d => data = d);
+//   $.ajax(settings).done(function (response) {
+//   });
 
   function toggleMenuO(){
     console.log("clicking", document.getElementById("menu-menu-1").style.transform);
@@ -102,3 +103,10 @@ let data; request.then(d => data = d);
     }
   }
 
+//   let clip = document.querySelector(".mousing")
+// clip.addEventListener("mouseover", function (e) {
+//             clip.play();
+//         })
+//         clip.addEventListener("mouseout", function (e) {
+//             clip.pause();
+//         })

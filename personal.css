@@ -52,6 +52,11 @@ html{
   scroll-behavior: smooth;
   /* animation: pageUnveil 400ms ease-in; */
 }
+body{
+  max-height: fit-content;
+  overflow-y: hidden;
+  margin-bottom: 0;
+}
 .video_underlay {
   width: 100vw;
   height: 100vh;
@@ -209,17 +214,23 @@ section {
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  padding-top: 5vh;
+  background-color: #000;
+  /* justify-content: space-between; */
 }
 .vid_flex{
   width: 33.3%;
-  height: 33%; 
+  height: 25vh; 
   padding: 0;
   background-color: #000;
+  vertical-align: top;
+}
+.imag {
+  height: 40vh;
 }
 .imag img{
   object-fit: cover;
-  height: 33vh;
+  height: 40vh;
 }
 .videosContainer{
   width: 100%;
@@ -231,13 +242,55 @@ section {
 }
 
 .video_box_class{
-  width: 33%;
-  height: 33%;
-  margin-bottom: 2%;
-  
-
+  width: 33.3%;
+  height: 33vh;
+  margin-bottom: 2%; 
+}
+.overVid{
+  position: inherit;
+  z-index: 5;
+  background-color: #000;
+  margin-top: -33vh;
+  height: 33vh;
 }
 
+.mousing:hover{
+  filter: brightness(70%);  
+}
+.showup {
+  left: 10%;
+  text-align: center;
+  width: 80%;
+  font-size: 1.5rem;
+  opacity: 0;
+  pointer-events: none; /* don’t block video clicks */
+  position: absolute;
+  transition: opacity 150ms linear;
+  top: 55%; /* adjust "top" and "left" to taste */
+  color: #fff;
+  z-index: 4;
+  transition: all 800ms ease-in-out;
+  -webkit-transition: all 800ms;
+}
+
+.video_box_class{
+  position: relative;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s;
+}
+
+.video_box_class:hover .mousing {
+  /* filter: blur(1px); */
+  z-index: 3;
+}
+.fa-solid.fa-circle-play{
+  font-size: 5.3rem;
+  top: 30%
+}
+.video_box_class:hover .showup {
+  opacity: 1;
+  z-index: 4;
+}
 #videoAppendHere a{
   color: white;
   background-color: #30e8dc;
@@ -291,7 +344,7 @@ footer h4{
 .excerpt {
   width: 75vw;
 }
-#toContact{
+#contact{
   width: 100vw;
   height: fit-content;
   background-color: #000;
@@ -300,13 +353,14 @@ footer h4{
 .cont_cont{
   width: 90%;
   height: 100%;
+  margin-left: 5%;
   margin-top: 5vh;
   display: flex;
   justify-content: center;
   gap: 8vw;
-  padding-inline: 5%;
+  /* padding-inline: 5%; */
 }
-#toContact label{
+#contact label{
 font-size: 2.2rem;
 font-weight: 200;
 letter-spacing: 6px;
@@ -315,7 +369,7 @@ padding-top: 3vh;
 color: #fff;
 }
 .buttono {
-  width: 25%;
+  width: 181px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-inline: 10px;
@@ -349,6 +403,8 @@ color: #fff;
 .buttono.button-2.blk:hover{
   color: #fff;
 }
+
+
 
 /* MObile Interface @media screen and (max-width: 420px) {*/
 

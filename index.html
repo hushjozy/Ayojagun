@@ -14,14 +14,17 @@
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com/"><link rel="alternate" type="application/rss+xml" title="Ayojagun » Feed" href="/feed/">
     <!-- <link rel="alternate" type="application/rss+xml" title="Danny Cooke » Comments Feed" href="/comments/feed/"> -->
     <script src="https://kit.fontawesome.com/2bbbf54a3f.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- <a data-popup-type="iframe" class="popup-video animated slow pulse" href="https://vimeo.com/255574950"></a> -->
     <section id="sect1">
         <div class="video_underlay">
-            <iframe src="https://www.youtube.com/embed/Cwrxx-qJL7I?autoplay=1&mute=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="true" title="Danny Cooke Website Background 2020" data-ready="true" style="width: 100vw;height: 100vh;"></iframe>
+            <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;">
+                <source src="blob:https://youfiles.herokuapp.com/a09dfd9b-c3b8-41e6-aec2-fd02eab33063" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            <!-- <iframe src="https://www.youtube.com/embed/Cwrxx-qJL7I?autoplay=1&mute=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="true" title="Danny Cooke Website Background 2020" data-ready="true" style="width: 100vw;height: 100vh;"></iframe> -->
             <div style="width:100%; height:100%; background-color: rgb(15 14 14 / 46%);
             position: absolute;
             z-index: 1;
@@ -49,7 +52,7 @@
                     <ul class="sub-menu" style="display: none;"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2462">
                         <a href="/services/aerial-cinematography/">Aerial/Drone </a></li></ul>
                 </li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2282">
-                    <a href="/portfolio/" class="sf-with-ul">Portfolio </a><ul class="sub-menu" style="display: none;">
+                    <a href="#sect2" class="sf-with-ul">Portfolio </a><ul class="sub-menu" style="display: none;">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2303">
                             <a href="/showreel/">Director/DP Showreel </a>
                         </li>
@@ -62,16 +65,25 @@
                             <a href="/portfolio/short-form/">Short Form</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2310">
                                 <a href="/portfolio/event-coverage/">Event Coverage</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-portfolio menu-item-2281">
                                     <a href="/portfolio/experimental/">Experimental</a></li></ul>
-                                </li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="/contact/">Contact</a></li></ul>
+                                </li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-206"><a href="#contact">Contact</a></li></ul>
                             </div></div>
                         
         </nav>
     
             <div class="hero_text" style="z-index: 20;">
-                <div class="li-wrap" style="margin-top: 50px; opacity: 1; color: #fff;"><h3 class="missing-url">Filmmaker, Director &amp; Cinematographer</h3><div class="excerpt"><p>“ I capture moment and turn your imagination to reality”</p></div>
-    <a data-popup-type="iframe" class="popup-video animated slow pulse" href="https://vimeo.com/255574950"></a></div>
+                <div class="li-wrap" style="margin-top: 50px; opacity: 1; color: #fff;"><h3 class="missing-url">Filmmaker, Director &amp; Cinematographer</h3><div class="excerpt"><p>“ I capture moment and turn your imagination to reality”</p>
+                    <a style="
+                    font-size: 5.5rem;
+                    color: #fff;" href="#sect2"><i class="fa-solid fa-chevron-down"   style="
+                    font-size: 5.5rem;
+                    color: #fff;
+                    width: 20vw;
+                    height: 20vh;
+                    margin-top: 35vh;"></i></a>
+
+                </div>
+    <!-- <a data-popup-type="iframe" class="popup-video animated slow pulse" href="https://vimeo.com/255574950"></a></div> -->
             </div>
-            <i class="fas fa-solid-arrow-down" ></i>
     </section>
     <section id="sect2">
         <div  style="width: 100vw; height: fit-content; background-color: rgb(188, 186, 186);position: relative;" id="videoAppendHere">
@@ -84,7 +96,7 @@
            
             </div>
     </section>
-<section class="story_slide">
+<section class="story_slide" id="story">
     <!-- <div> -->
         <img src="./img/DSC_0167 Large.jpeg" alt="">
         <div class="story_msg">
@@ -108,7 +120,7 @@
 </section>           
         </div>
         <footer id="colophon" class="site-footer" role="contentinfo" style=" background: #000;">
-            <div id="toContact">
+            <div id="contact">
                 <label>Need to contact me for Bookings</label>
                 <div class="cont_cont" >
                     <a href="https://www.twitter.com/ayojagun/" class="buttono button-2 blk"><i class="fa-brands fa-twitter"></i> Send A Tweet DM</a>
@@ -127,93 +139,242 @@
                 <img src="./img/wk6.JPG" alt="" srcset="" class="brands">
                 <img src="./img/wk7.JPG" alt="" srcset="" class="brands">
             </div>
-            <div class="inner-wrap"><div class="footer-widgets widgets widget-columns-1">
-                <div class="column"><div class="widget simple-social-icons" id="simple-social-icons-2">
-                    <!-- <ul class="aligncenter">
-                        <li class="ssi-email">
-                            <a href="mailto:adekoyaayodele14@gmail.com">
-                                </li>
-                                <li class="ssi-instagram">
-                                    <a href="https://www.instagram.com/ayojagun/" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-instagram"></i>
-                                </a></li>
-                                    <li class="ssi-linkedin"><a href="https://www.linkedin.com/in/ayojagun/" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa-brands fa-linkedin"></i>                                        </a></li>
-                                            <li class="ssi-twitter"><a href="http://www.twitter.com/ayojagun" target="_blank" rel="noopener noreferrer">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a></li>
-                                            <li class="ssi-vimeo"><a href="http://www.vimeo.com/ayojagun" target="_blank" rel="noopener noreferrer">
-                                                <i class="fa-brands fa-vimeo"></i>                                            </a></li>
-                                            <li class="ssi-youtube"><a href="http://www.youtube.com/ayojagun" target="_blank" rel="noopener noreferrer">
-                                            <i class="fa-brands fa-youtube"></i>
-                                            </a></li>
-                                        </ul><div class="clear"></div></div> -->
-                                        <div class="widget widget_text" id="text-3"><div class="textwidget"><p align="center">© Ayojagun Filmmaker 2022 | Powered by 
-                                            <a target="_blank"  rel="noopener">HusH</a></p></div><div class="clear"></div></div></div><div class="clear"></div><div class="site-footer-separator"></div></div><div class="site-info "><p class="copyright"></p>
-                                               </div></div></footer>
+            <div class="">
+                                            <p align="center" style="margin-top: 28vh; border-bottom: 2px solid">© Ayojagun Filmmaker 2022 | Powered by 
+                                            <a target="_blank"  rel="noopener">HusH</a></p>
+                                            </div></footer>
     </body>
 
 
-    <!-- <script src="script.js"></script> -->
     <script>
-        var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://kiradb-4408.restdb.io/rest/a-js",
-  "method": "GET",
-  "headers": {
-    "content-type": "application/json",
-    "x-apikey": "63443556626b9c747864aaf1",
-    "cache-control": "no-cache"
+        var vidArry=[
+  {
+    "id": 1,
+    "video_title": "Artx 2019",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/t9pda1FPt6M",
+    "video_thumbnail": "https://i.ytimg.com/vi/t9pda1FPt6M/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAgybfdvUpA2lvIKucYk83n4F023A"
+  },
+  {
+    "id": 2,
+    "video_title": "Alitheia Documentary | Investment",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/jjSJltGQPM8",
+    "video_thumbnail": "https://i.ytimg.com/vi/jjSJltGQPM8/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDHUfJiXNnNjZ-crhq6DgDdWWreJw"
+  },
+  {
+    "id": 3,
+    "video_title": "Bbc Stacation",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/9U4q6Wum1OA",
+    "video_thumbnail": "https://i.ytimg.com/vi/9U4q6Wum1OA/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAPwI2KsTjcIGnzndCXaZVlOh1qmQ"
+  },
+  {
+    "id": 4,
+    "video_title": "ARTX TANGERINE 2020",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/rL4GwswbvNE",
+    "video_thumbnail": "https://i.ytimg.com/vi/rL4GwswbvNE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB4OruTN6w8Z4Cscr0PlZUhG-DieQ"
+  },
+  {
+    "id": 5,
+    "video_title": "NIGERIA GERMAN CENTER INITIATIVE",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/U3t_VVBT60E",
+    "video_thumbnail": "https://i.ytimg.com/vi/U3t_VVBT60E/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCMobnkeEqXr1c_ObjFeZ2a9tCj_A"
+  },
+  {
+    "id": 6,
+    "video_title": "NGC INITIATIVE",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/SDgSknrASbU",
+    "video_thumbnail": "https://i.ytimg.com/vi/SDgSknrASbU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCYoXaarf128V1ohHEdZIXteSlSng"
+  },
+  {
+    "id": 7,
+    "video_title": "NGC IDP CAMP",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/n-dvF8AUun8",
+    "video_thumbnail": "https://i.ytimg.com/vi/n-dvF8AUun8/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDWWPkkK8QjBBjvkubz-txqGztXyw"
+  },
+  {
+    "id": 8,
+    "video_title": "NGC IDP CAMP ( SHOEMAKING)",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/_SxmtRAMUfE",
+    "video_thumbnail": "https://i.ytimg.com/vi/_SxmtRAMUfE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCQQ1VMc8J-Mly3Y1_1QsRCUpFGDg"
+  },
+  {
+    "id": 9,
+    "video_title": "Olokada",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/2B9qqfGuZFc",
+    "video_thumbnail": "https://i.ytimg.com/vi/2B9qqfGuZFc/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBwwuf4EOzGf5lH4dPaZ7G-kzkrMg"
+  },
+  {
+    "id": 10,
+    "video_title": "Vava Furnitures",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/1gsvqW5ufDI",
+    "video_thumbnail": "https://i.ytimg.com/vi/1gsvqW5ufDI/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDa4sW7dAsukoGH2Aj0uZs2D7vLwA"
+  },
+  {
+    "id": 11,
+    "video_title": "Back To Base Workshop | Documentary",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/Qb04hjuZTOY",
+    "video_thumbnail": "https://i.ytimg.com/vi/Qb04hjuZTOY/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAiVQK9ftAW2U6xxnYz6_OZDE1qkA"
+  },
+  {
+    "id": 12,
+    "video_title": "ART COLLECTORS",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/MBqPR30F7V0",
+    "video_thumbnail": "https://i.ytimg.com/vi/MBqPR30F7V0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLABznIFx5WNrnkBsvgT_tt4yyoUzQ"
+  },
+  {
+    "id": 13,
+    "video_title": "Back to base",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/b-ppP6d7q3Q",
+    "video_thumbnail": "https://i.ytimg.com/vi/b-ppP6d7q3Q/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAnolAezRVSEkk_TDUJHcu4yptGdw"
+  },
+  {
+    "id": 14,
+    "video_title": "Alimi(Art X)",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/AcfbF0sWUus",
+    "video_thumbnail": "https://i.ytimg.com/vi/AcfbF0sWUus/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD-XV4bLfRosgAIMJuagqd4alfUfQ"
+  },
+  {
+    "id": 15,
+    "video_title": "Art Collector (Ms. juliana)",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/XbvbJr2owyM",
+    "video_thumbnail": "https://i.ytimg.com/vi/XbvbJr2owyM/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCMr9pY3z4S2akUs6OCWvlCamXdeA"
+  },
+  {
+    "id": 16,
+    "video_title": "Gerald Chukwuma -Artx",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/udyKpW0U0a0",
+    "video_thumbnail": "https://i.ytimg.com/vi/udyKpW0U0a0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDgb0Smza1Hza0_QxpPIWWEVX9IOg"
+  },
+  {
+    "id": 17,
+    "video_title": "SOCIAL MEDIA WEEK",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/46JR-QanbDo",
+    "video_thumbnail": "https://i.ytimg.com/vi/46JR-QanbDo/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBNvqmMf-FbqvuLzBB_6Xq_6S-0rA"
+  },
+  {
+    "id": 18,
+    "video_title": "DJ OBI (RE-INTRODUCTION) - Bio Documentary",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/fGbOTTJGdSE",
+    "video_thumbnail": "https://i.ytimg.com/vi/fGbOTTJGdSE/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC6C8LLq0IdoslbU0wRyrjMNmKJkw"
+  },
+  {
+    "id": 19,
+    "video_title": "Vapours montage",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/Flu0J4hlHbU",
+    "video_thumbnail": "https://i.ytimg.com/vi/Flu0J4hlHbU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDaxNWrIU4KCzUS3FdnbLjaH0wZcA"
+  },
+  {
+    "id": 20,
+    "video_title": "Makoko community",
+    "video_desc": "", 
+    "video_url": "https://www.youtube.com/embed/VN1txdoS-wg",
+    "video_thumbnail": "https://i.ytimg.com/vi/VN1txdoS-wg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB1AGUu2qpoPmab4BdWawYxhaop2Q"
+  },
+  {
+    "id": 21,
+    "video_title": "Show Reel",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/-nAHvzdEk0s",
+    "video_thumbnail": "https://i.ytimg.com/vi/-nAHvzdEk0s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCslx12TH1uFDYrs8sz4w-jzZWDxA"
+  },
+  {
+    "id": 22,
+    "video_title": "Demo reel",
+    "video_desc": "",
+    "video_url": "https://www.youtube.com/embed/uqjaeo0pmi0",
+    "video_thumbnail": "https://i.ytimg.com/vi/uqjaeo0pmi0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLC7Pdye10J7RPEnXyQAemhcArnlYw"
   }
-}
+]
+
+//         var settings = {
+//   "async": true,
+//   "crossDomain": true,
+//   "url": "https://kiradb-4408.restdb.io/rest/a-js",
+//   "method": "GET",
+//   "headers": {
+//     "content-type": "application/json",
+//     "x-apikey": "63443556626b9c747864aaf1",
+//     "cache-control": "no-cache"
+//   }
+// }
 
 
 const video_div = document.getElementById('videoAppendHere')
     const newDivElement = document.createElement('div')
      newDivElement.className= 'videosContainer'
-     const seeMoreBtn = document.createElement('a');
-     seeMoreBtn.href='www.youtube.com'
-     seeMoreBtn.innerHTML= "View More"
-$.ajax(settings).done(function (response) {
+     
+// $.ajax(settings).done(function (response) {
   
     // videoArray.push(response)
-    console.log('video array videos',response)
   
-  response.splice(8).map((item, index)=>{
-    const vidFlexed= document.createElement('div')
+  vidArry.map((item, index)=>{
+      if (index < 6){
+        const vidFlexed= document.createElement('div')
     vidFlexed.className= 'video_box_class'
     vidFlexed.id=`videoBox${index}`
-
+    // vidFlexed.dataContent= item.video_title
+    // const seeMoreBtn = document.createElement('p');
+    //  seeMoreBtn.innerHTML=item.video_title
      const markup = `
-                <video
-                id="vidplay${index}"
-                class="portfolio-gallery-video-background"
-                controls="true"
-                loop=""
-                muted=""
-                playsinline=""
-                poster="${item.video_thumbnail}"
-                style="
-                  width: 100%;
-                  height: 100%;
-                "
-              >
-                <source
-                  src="${item.video_url}"
-                  type="video/mp4"
-                /></video >
-     
-     
+                  <video class="mousing" muted loop id="myVideo" style="width: 100%;height: 33vh; object-fit: cover">
+                <source src="./MONTAGE 2.MP4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <i class="fa-solid fa-circle-play showup"></i>
+              <p class="showup">${item.video_title.substring(0,18)}</p>
      `
      newDivElement.append(vidFlexed) ;     
-    vidFlexed.innerHTML= markup
+    vidFlexed.innerHTML= markup 
+    // video_div.append(seeMoreBtn)
+
+    // <iframe
+    //             id="vidplay${index}"
+    //             class="portfolio-gallery-video-background mousing"
+    //             controls="false"
+    //             loop=""
+    //             muted="muted"
+    //             playsinline=""
+    //             poster="${item.video_thumbnail}"
+    //             style="
+    //               width: 100%;
+    //               height: 33vh;
+    //             "
+    //               src="${item.video_url}?autoplay=0&mute=1&showinfo=0&controls=0&enablejsapi=1&modestbranding=1" enablejsapi="1" frameborder="0"></iframe >
+
+      }
  })
 
 
  video_div.append(newDivElement)
-// video_div.append(seeMoreBtn)
-});
+// });
+
+
+$(document).ready(function() {
+    $(".mousing").on("mouseover", function(event) {
+      this.play();
+    }).on('mouseout', function(event) {
+      this.pause();
+    });
+  })
+
     </script>
     <script src="./script.js"></script>
 </html>
