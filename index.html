@@ -21,10 +21,14 @@
     <!-- <a data-popup-type="iframe" class="popup-video animated slow pulse" href="https://vimeo.com/255574950"></a> -->
     <section id="sect1">
         <div class="video_underlay">
-            <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;">
-                <source src="blob:https://youfiles.herokuapp.com/a09dfd9b-c3b8-41e6-aec2-fd02eab33063" type="video/mp4">
+            <!-- <video autoplay muted loop id="myVideo" style="width: 100vw;height: 100vh;">
+                <source src="https://vimeo.com/763109306" type="video/mp4">
                 Your browser does not support HTML5 video.
-              </video>
+              </video> -->
+              <iframe src="https://player.vimeo.com/video/763109306?h=99e207138d?title=0&byline=0&muted=1&autoplay=1&loop=1&background=1" width="100vw" height="100vh" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<!-- <p>
+    <a href="https://vimeo.com/763109306">Test</a> from <a href="https://vimeo.com/user109667756">Adekoya damilola</a> on <a href="https://vimeo.com">Vimeo</a>.
+</p> -->
             <!-- <iframe src="https://www.youtube.com/embed/Cwrxx-qJL7I?autoplay=1&mute=1"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="true" title="Danny Cooke Website Background 2020" data-ready="true" style="width: 100vw;height: 100vh;"></iframe> -->
             <div style="width:100%; height:100%; background-color: rgb(15 14 14 / 46%);
             position: absolute;
@@ -383,8 +387,8 @@ const video_div = document.getElementById('videoAppendHere')
     // const seeMoreBtn = document.createElement('p');
     //  seeMoreBtn.innerHTML=item.video_title
      const markup = `
-                  <video class="mousing" muted loop id="myVideo" style="width: 100%;height: 33vh; object-fit: cover">
-                <source src="./MONTAGE 2.MP4" type="video/mp4">
+                  <video crossorigin="anonymous" class="mousing" muted loop id="myVideo" style="width: 100%;height: 33vh; object-fit: cover">
+                <source src="https://vimeo.com/763109306" type="video/mp4">
                 Your browser does not support HTML5 video.
               </video>
               <i class="fa-solid fa-circle-play showup"></i>
