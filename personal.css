@@ -117,7 +117,7 @@ section {
   animation: pageUnveil 800ms ease-in;
 }
 .navbar.page-with-cover {
-  background: #000;
+  background: #00000040;
 }
 .li-wrap {
   transition: all 1s ease-in;
